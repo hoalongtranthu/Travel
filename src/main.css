@@ -5,6 +5,48 @@ html.sr body .load-hidden {
     visibility: hidden;
 }
 
+.verticalnavbar {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 109, 107, .4);
+    z-index: 100;
+    animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#checkbox:checked~.verticalnavbar {
+    display: block;
+}
+
+#checkbox:checked~.vnavbar {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.vnavbar {
+    animation: fadeIn linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+::-webkit-scrollbar {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b8bcc3;
+    border-radius: 25px;
+}
+
 @layer components {
     .link {
         @apply transition-all duration-300 ease-linear rounded-[10px];
@@ -28,7 +70,7 @@ html.sr body .load-hidden {
         @apply text-[1.3em] border-solid border border-green-600 text-green-600 bg-transparent;
     }
     .subheading {
-        @apply h-[27px] font-['Poppins'] font-[600] text-[18px] leading-[27px] text-center text-[#5e6282]
+        @apply h-[27px] font-['Poppins'] font-[600] text-[18px] leading-[27px] text-center text-[#5e6282];
     }
     .heading {
         @apply font-['Volkhov'] font-bold text-[50px] leading-[65px] capitalize text-[#14183e];
@@ -65,5 +107,14 @@ html.sr body .load-hidden {
     }
     .subscribe:hover .message {
         @apply animate-[ping_1s_ease-in-out_infinite]
+    }
+    .navbar {
+        @apply flex justify-end items-center w-[90%] gap-[2%]
+    }
+    .vnavbar {
+        @apply flex flex-col gap-y-2 bg-red-500 h-full w-[280px] justify-start items-center pt-2 fixed left-0 top-0 translate-x-[-100%] z-[1000] opacity-0 rounded-r-md overflow-y-auto
+    }
+    .vnavbar .link {
+        @apply block w-4/5 min-h-[40px] leading-[40px]
     }
 }

@@ -1,9 +1,13 @@
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
+    content: ["./src/**/*.{html,js}", './index.html'],
     theme: {
         screens: {
-            'mobile': { 'max': '639px' },
-            'tablet': { 'max': '1136px' },
+            'ipadpro': { 'max': '1024px' },
+            'ipad': { 'max': '900px' },
+            'miniipad': { 'max': '768px' },
+            'tablet': { 'max': '600px' },
+            'mobile': { 'max': '420px' },
+
         },
         extend: {
             keyframes: {
@@ -17,6 +21,9 @@ module.exports = {
                         opacity: .8
                     }
                 }
+            },
+            fontSize: {
+                '7xl': '5rem',
             },
             backgroundSize: {
                 '110%': '110%',
