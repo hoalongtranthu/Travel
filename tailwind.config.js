@@ -2,6 +2,7 @@ module.exports = {
     content: ["./src/**/*.{html,js}", './index.html'],
     theme: {
         screens: {
+            'tv': '1920px',
             'ipadpro': { 'max': '1024px' },
             'ipad': { 'max': '900px' },
             'miniipad': { 'max': '768px' },
