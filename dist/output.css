@@ -478,9 +478,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .link:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   --tw-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   --tw-shadow-colored: 0px 100px 80px var(--tw-shadow-color), 0px 64.8148px 46.8519px var(--tw-shadow-color), 0px 38.5185px 25.4815px var(--tw-shadow-color), 0px 20px 13px var(--tw-shadow-color), 0px 8.14815px 6.51852px var(--tw-shadow-color), 0px 1.85185px 3.14815px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -682,7 +682,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-right-radius: 0.375rem;
   border-bottom-right-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   opacity: 0;
 }
@@ -1101,10 +1101,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[45\%\] {
   max-width: 45%;
-}
-
-.max-w-\[1320px\] {
-  max-width: 1320px;
 }
 
 .max-w-\[180px\] {
@@ -1680,7 +1676,7 @@ html.sr body .load-hidden {
 .verticalnavbar {
   position: fixed;
   inset: 0;
-  background-color: rgba(255, 109, 107, .4);
+  background-color: rgba(10, 10, 10, .3);
   z-index: 100;
   -webkit-animation: fadeIn linear 1s;
           animation: fadeIn linear 1s;

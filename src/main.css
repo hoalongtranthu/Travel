@@ -8,7 +8,7 @@ html.sr body .load-hidden {
 .verticalnavbar {
     position: fixed;
     inset: 0;
-    background-color: rgba(255, 109, 107, .4);
+    background-color: rgba(10, 10, 10, .3);
     z-index: 100;
     animation: fadeIn linear 1s;
 }
@@ -52,7 +52,7 @@ html.sr body .load-hidden {
         @apply transition-all duration-300 ease-linear rounded-[10px];
     }
     .link:hover {
-        @apply shadow-4xl bg-[#fff] text-green-600;
+        @apply shadow-4xl bg-[#333] text-white;
     }
     .nav__item {
         @apply font-['Google_Sans'] leading-[22px] font-[500] min-w-[75px] h-[22px] text-[17px] text-center text-[#212832];
@@ -112,7 +112,7 @@ html.sr body .load-hidden {
         @apply flex justify-end items-center w-[90%] gap-[2%]
     }
     .vnavbar {
-        @apply flex flex-col gap-y-2 bg-red-500 h-full w-[280px] justify-start items-center pt-2 fixed left-0 top-0 translate-x-[-100%] z-[1000] opacity-0 rounded-r-md overflow-y-auto
+        @apply flex flex-col gap-y-2 bg-white h-full w-[280px] justify-start items-center pt-2 fixed left-0 top-0 translate-x-[-100%] z-[1000] opacity-0 rounded-r-md overflow-y-auto
     }
     .vnavbar .link {
         @apply block w-4/5 min-h-[40px] leading-[40px]
