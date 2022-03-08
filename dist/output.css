@@ -777,6 +777,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
+.right-\[100px\] {
+  right: 100px;
+}
+
 .z-\[-1\] {
   z-index: -1;
 }
@@ -1727,6 +1731,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* html.sr body .load-hidden {
@@ -2022,6 +2027,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 100%;
   }
 
+  .miniipad\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .miniipad\:w-10 {
     width: 2.5rem;
   }
@@ -2293,6 +2302,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .mobile\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .mobile\:pb-44 {
+    padding-bottom: 11rem;
   }
 
   .mobile\:pr-2 {
