@@ -1,16 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html.sr body .load-hidden {
-    visibility: hidden;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+
+/* html.sr body .load-hidden {
+    visibility: hidden;
+} */
 
 .verticalnavbar {
     position: fixed;
     inset: 0;
     background-color: rgba(10, 10, 10, .3);
     z-index: 100;
-    animation: fadeIn linear 1s;
+    animation: fadeIn linear .7s;
 }
 
 @keyframes fadeIn {
@@ -32,8 +38,51 @@ html.sr body .load-hidden {
 }
 
 .vnavbar {
-    animation: fadeIn linear 0.5s;
+    animation: fadeIn linear 0.4s;
+    transition: all linear 0.4s;
+}
+
+#checkbox:checked~.header .toggle {
+    transform: rotate(90deg);
+}
+
+.toggle {
     transition: all linear 0.5s;
+}
+
+.toggle:active {
+    transform: rotate(90deg);
+}
+
+.dropdown__items {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 8px 0 8px 8px;
+}
+
+#dropdown1:checked~label .dropdown__items {
+    display: block;
+}
+
+#dropdown2:checked~label .dropdown__items {
+    display: block;
+}
+
+.dropdown__item {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+.dropdown__item:hover {
+    color: rgb(7, 7, 226);
+}
+
+.selected {
+    color: rgb(7, 7, 226);
 }
 
 ::-webkit-scrollbar {
@@ -52,22 +101,28 @@ html.sr body .load-hidden {
         @apply transition-all duration-300 ease-linear rounded-[10px];
     }
     .link:hover {
-        @apply shadow-4xl bg-[#333] text-white;
+        @apply shadow-4xl text-blue-700;
     }
     .nav__item {
         @apply font-['Google_Sans'] leading-[22px] font-[500] min-w-[75px] h-[22px] text-[17px] text-center text-[#212832];
     }
-    .button__primary__text {
-        @apply font-['Google_Sans'] font-[500] text-[18px] leading-[23px] text-center text-[#fff] rounded-[10px];
+    .button--primary {
+        @apply text-[#fff] rounded-[10px] bg-[#fdb823];
     }
-    .button__secondary__text {
-        @apply font-['Google_Sans'] font-[500] text-[17px] leading-[22px] text-[#212832] border-solid border border-[#212832] rounded-[5px];
+    .button--secondary {
+        @apply text-[#212832] border-solid border border-[#212832] rounded-[5px];
     }
     .button {
-        @apply transition-all duration-300 ease-linear;
+        @apply transition-all duration-300 ease-linear opacity-80 font-['Google_Sans'] font-[500] text-[18px] leading-[23px] text-center;
     }
     .button:hover {
-        @apply text-[1.3em] border-solid border border-green-600 text-green-600 bg-transparent;
+        @apply opacity-100;
+    }
+    .button--primary:hover {
+        @apply bg-[#f1a501]
+    }
+    .button--secondary:hover {
+        @apply bg-[#212832] text-[#eee]
     }
     .subheading {
         @apply h-[27px] font-['Poppins'] font-[600] text-[18px] leading-[27px] text-center text-[#5e6282];
@@ -99,11 +154,14 @@ html.sr body .load-hidden {
     .icon:hover {
         @apply scale-125
     }
+    .input {
+        @apply border-[2px] border-solid border-transparent
+    }
     .input:focus {
         @apply border-[2px] border-solid border-green-600 outline-none
     }
     .input:hover {
-        @apply scale-105
+        @apply border-[2px] border-solid border-green-600
     }
     .subscribe:hover .message {
         @apply animate-[ping_1s_ease-in-out_infinite]

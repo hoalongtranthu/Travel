@@ -19,7 +19,7 @@ module.exports = {
                 ping: {
                     '75%, 100%': {
                         transform: 'scale(1.2)',
-                        opacity: .8
+                        opacity: 1
                     }
                 }
             },
