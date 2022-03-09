@@ -12,7 +12,6 @@ h.onmouseleave = function() {
 }
 var dropvalue = document.getElementsByClassName('dropvalue')
 var items = document.getElementsByClassName('dropdown__item');
-console.log(items)
 for (let i = 0; i < items.length; i++) {
     items[i].onclick = function() {
         // items[i].classList.toggle('selected')
@@ -23,4 +22,4 @@ for (let i = 0; i < items.length; i++) {
     }
 }
 var t = document.querySelector('.dropdown1:checked~.dropdown__icon .dropdown__items')
-console.log(t)
+console.log()

@@ -18,6 +18,7 @@
     background-color: rgba(10, 10, 10, .3);
     z-index: 100;
     animation: fadeIn linear .7s;
+    display: none;
 }
 
 @keyframes fadeIn {
@@ -60,8 +61,9 @@
     top: 100%;
     right: 0;
     background-color: #fff;
-    padding: 4px 8px;
+    padding: 0;
     border-radius: 8px 0 8px 8px;
+    min-width: 120px;
 }
 
 #dropdown1:checked~label .dropdown__items {
@@ -74,7 +76,6 @@
 
 .dropdown__item {
     display: block;
-    border-radius: 4px;
     cursor: pointer;
     padding: 4px 0;
     transition: all linear 0.4s;
@@ -90,7 +91,8 @@
 }
 
 .selected {
-    color: rgb(7, 7, 226);
+    color: rgb(6, 6, 211);
+    background-color: rgb(74, 74, 248);
 }
 
 ::-webkit-scrollbar {
@@ -104,12 +106,16 @@
     border-radius: 25px;
 }
 
+.testimonials .slick-dots li button:before {
+    font-size: 18px;
+}
+
 @layer components {
     .link {
-        @apply transition-all duration-300 ease-linear rounded-[10px];
+        @apply transition-all duration-500 ease-linear rounded-[10px];
     }
     .link:hover {
-        @apply shadow-4xl text-blue-700;
+        @apply text-blue-700;
     }
     .nav__item {
         @apply font-['Google_Sans'] leading-[22px] font-[500] min-w-[75px] h-[22px] text-[17px] text-center text-[#212832];
@@ -138,6 +144,9 @@
     .heading {
         @apply font-['Volkhov'] font-bold text-[50px] leading-[65px] capitalize text-[#14183e];
     }
+    .paragraph13 {
+        @apply font-['Poppins'] font-[400] text-[13px] leading-[17px] text-[#5e6282];
+    }
     .paragraph14 {
         @apply font-['Poppins'] font-[400] text-[14px] leading-[21px] text-[#5e6282];
     }
@@ -151,10 +160,10 @@
         @apply font-['Poppins'] font-bold text-[20px] leading-[27px] text-[#5e6282];
     }
     .card {
-        @apply transition-all duration-300 ease-in-out;
+        @apply transition-all duration-300 ease-in-out opacity-80
     }
     .card:hover {
-        @apply scale-105
+        @apply scale-105 opacity-100
     }
     .icon {
         @apply transition-all duration-500 ease-in-out;
@@ -181,6 +190,6 @@
         @apply flex flex-col gap-y-2 bg-white h-full w-[280px] justify-start items-center pt-2 fixed left-0 top-0 translate-x-[-100%] z-[1000] opacity-0 rounded-r-md overflow-y-auto
     }
     .vnavbar .link {
-        @apply block w-4/5 min-h-[40px] leading-[40px]
+        @apply block w-full min-h-[40px] leading-[40px]
     }
 }

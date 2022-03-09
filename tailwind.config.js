@@ -8,6 +8,7 @@ module.exports = {
             'miniipad': { 'max': '768px' },
             'tablet': { 'max': '600px' },
             'mobile': { 'max': '420px' },
+            'ipad1': '901px',
 
         },
         extend: {
