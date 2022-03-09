@@ -753,8 +753,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 230px;
 }
 
-.right-\[100px\] {
-  right: 100px;
+.right-\[150px\] {
+  right: 150px;
 }
 
 .left-0 {
@@ -779,14 +779,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .left-\[50\%\] {
   left: 50%;
-}
-
-.right-\[150px\] {
-  right: 150px;
-}
-
-.top-\[50px\] {
-  top: 50px;
 }
 
 .z-\[-1\] {
@@ -950,12 +942,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 24px;
 }
 
-.h-\[150px\] {
-  height: 150px;
+.h-\[100px\] {
+  height: 100px;
 }
 
 .h-\[36px\] {
   height: 36px;
+}
+
+.h-\[90\%\] {
+  height: 90%;
 }
 
 .h-\[68px\] {
@@ -972,14 +968,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[44px\] {
   height: 44px;
-}
-
-.h-\[90\%\] {
-  height: 90%;
-}
-
-.h-\[100px\] {
-  height: 100px;
 }
 
 .max-h-\[750px\] {
@@ -1016,10 +1004,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-\[250px\] {
   min-height: 250px;
-}
-
-.min-h-\[450px\] {
-  min-height: 450px;
 }
 
 .w-1\/2 {
@@ -1094,8 +1078,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 75%;
 }
 
-.w-\[150px\] {
-  width: 150px;
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[36px\] {
@@ -1104,6 +1088,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[14px\] {
   width: 14px;
+}
+
+.w-\[45\%\] {
+  width: 45%;
 }
 
 .w-\[68px\] {
@@ -1128,26 +1116,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[140px\] {
   width: 140px;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[45\%\] {
-  width: 45%;
-}
-
-.w-\[50px\] {
-  width: 50px;
-}
-
-.w-\[100px\] {
-  width: 100px;
 }
 
 .min-w-\[100px\] {
@@ -1208,10 +1176,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[200px\] {
   max-width: 200px;
-}
-
-.basis-\[90\%\] {
-  flex-basis: 90%;
 }
 
 .translate-x-\[-50\%\] {
@@ -1337,14 +1301,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
-.overflow-y-visible {
-  overflow-y: visible;
 }
 
 .rounded-\[50px\] {
@@ -1569,11 +1525,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 4px;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pt-\[40px\] {
   padding-top: 40px;
 }
@@ -1586,12 +1537,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 200px;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .pb-\[130px\] {
   padding-bottom: 130px;
 }
 
-.pr-\[75px\] {
-  padding-right: 75px;
+.pr-\[35px\] {
+  padding-right: 35px;
 }
 
 .pb-\[145px\] {
@@ -1612,18 +1567,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-9 {
   padding-bottom: 2.25rem;
-}
-
-.pb-\[100px\] {
-  padding-bottom: 100px;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
-.pr-\[35px\] {
-  padding-right: 35px;
 }
 
 .text-left {
@@ -1893,13 +1836,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .dropdown__item {
+  display: block;
   border-radius: 4px;
   cursor: pointer;
   padding: 4px 0;
+  transition: all linear 0.4s;
+  min-width: 120px;
+  color: #333;
+  opacity: .8;
 }
 
 .dropdown__item:hover {
-  color: rgb(7, 7, 226);
+  color: #000;
+  opacity: 1;
+  background-color: #ccc;
 }
 
 .selected {

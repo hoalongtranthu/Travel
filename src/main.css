@@ -73,13 +73,20 @@
 }
 
 .dropdown__item {
+    display: block;
     border-radius: 4px;
     cursor: pointer;
     padding: 4px 0;
+    transition: all linear 0.4s;
+    min-width: 120px;
+    color: #333;
+    opacity: .8;
 }
 
 .dropdown__item:hover {
-    color: rgb(7, 7, 226);
+    color: #000;
+    opacity: 1;
+    background-color: #ccc;
 }
 
 .selected {
