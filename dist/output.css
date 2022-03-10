@@ -993,10 +993,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 44px;
 }
 
-.h-14 {
-  height: 3.5rem;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -1151,10 +1147,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[140px\] {
   width: 140px;
-}
-
-.w-14 {
-  width: 3.5rem;
 }
 
 .w-12 {
@@ -2208,12 +2200,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 90%;
   }
 
-  .miniipad\:scale-\[1\.1\] {
-    --tw-scale-x: 1.1;
-    --tw-scale-y: 1.1;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .miniipad\:flex-row {
     flex-direction: row;
   }
@@ -2249,11 +2235,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .miniipad\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-  }
-
-  .miniipad\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .miniipad\:px-2 {
@@ -2325,8 +2306,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 420px) {
-  .mobile\:top-\[250px\] {
-    top: 250px;
+  .mobile\:top-\[280px\] {
+    top: 280px;
   }
 
   .mobile\:top-\[14px\] {
@@ -2339,10 +2320,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .mobile\:left-\[25\%\] {
     left: 25%;
-  }
-
-  .mobile\:top-\[280px\] {
-    top: 280px;
   }
 
   .mobile\:mb-4 {
