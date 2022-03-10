@@ -712,9 +712,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .vnavbar .link {
+  margin: 0px;
   display: block;
   min-height: 40px;
   width: 100%;
+  border-radius: 0px;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-top-color: rgb(51 51 51 / var(--tw-border-opacity));
+  padding: 0px;
   line-height: 40px;
 }
 
@@ -987,6 +993,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 44px;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .max-h-\[750px\] {
   max-height: 750px;
 }
@@ -1035,8 +1049,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
-.w-\[20px\] {
-  width: 20px;
+.w-\[30px\] {
+  width: 30px;
 }
 
 .w-full {
@@ -1107,6 +1121,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 14px;
 }
 
+.w-\[20px\] {
+  width: 20px;
+}
+
 .w-\[50\%\] {
   width: 50%;
 }
@@ -1133,6 +1151,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[140px\] {
   width: 140px;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .min-w-\[100px\] {
@@ -1880,22 +1906,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: rotate(90deg);
 }
 
+.dropdown__icon:hover .dropdown__items {
+  display: block;
+}
+
 .dropdown__items {
   position: absolute;
   top: 100%;
-  right: 0;
-  background-color: #fff;
+  right: -30px;
+  background-color: #eee;
   padding: 0;
   border-radius: 8px 0 8px 8px;
-  min-width: 120px;
-}
-
-#dropdown1:checked~label .dropdown__items {
-  display: block;
-}
-
-#dropdown2:checked~label .dropdown__items {
-  display: block;
+  min-width: 135px;
 }
 
 .dropdown__item {
@@ -2000,6 +2022,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .ipadpro\:w-full {
     width: 100%;
+  }
+
+  .ipadpro\:max-w-\[80\%\] {
+    max-width: 80%;
   }
 
   .ipadpro\:max-w-full {
@@ -2196,6 +2222,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: column;
   }
 
+  .miniipad\:items-center {
+    align-items: center;
+  }
+
   .miniipad\:justify-around {
     justify-content: space-around;
   }
@@ -2224,6 +2254,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .miniipad\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .miniipad\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .miniipad\:pt-2 {
@@ -2264,6 +2299,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 600px) {
+  .tablet\:hidden {
+    display: none;
+  }
+
   .tablet\:w-60 {
     width: 15rem;
   }
@@ -2300,6 +2339,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .mobile\:left-\[25\%\] {
     left: 25%;
+  }
+
+  .mobile\:top-\[280px\] {
+    top: 280px;
   }
 
   .mobile\:mb-4 {
@@ -2364,14 +2407,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .mobile\:w-\[90\%\] {
     width: 90%;
-  }
-
-  .mobile\:w-48 {
-    width: 12rem;
-  }
-
-  .mobile\:w-24 {
-    width: 6rem;
   }
 
   .mobile\:w-4\/5 {

@@ -21,5 +21,3 @@ for (let i = 0; i < items.length; i++) {
         }
     }
 }
-var t = document.querySelector('.dropdown1:checked~.dropdown__icon .dropdown__items')
-console.log()
