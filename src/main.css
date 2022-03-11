@@ -12,6 +12,11 @@
     visibility: hidden;
 } */
 
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
 .verticalnavbar {
     position: fixed;
     inset: 0;
@@ -73,7 +78,7 @@
 .dropdown__item {
     display: block;
     cursor: pointer;
-    padding: 4px 0;
+    padding: 4px 16px;
     transition: all linear 0.4s;
     min-width: 120px;
     color: #333;
@@ -93,8 +98,8 @@
 
 ::-webkit-scrollbar {
     appearance: none;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -186,6 +191,12 @@
         @apply flex flex-col gap-y-2 bg-white h-full w-[280px] justify-start items-center pt-2 fixed left-0 top-0 translate-x-[-100%] z-[1000] opacity-0 rounded-r-md overflow-y-auto
     }
     .vnavbar .link {
-        @apply block w-full min-h-[40px] leading-[40px] border-t border-t-[#333] rounded-none p-0 m-0
+        @apply block w-full min-h-[40px] leading-[40px] rounded-none p-0 m-0 text-left pl-4
+    }
+    .vnavbar .link:hover {
+        @apply bg-slate-400 text-white
+    }
+    .vnavbar .button {
+        @apply border-none
     }
 }

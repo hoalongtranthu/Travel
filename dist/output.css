@@ -717,11 +717,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 40px;
   width: 100%;
   border-radius: 0px;
-  border-top-width: 1px;
-  --tw-border-opacity: 1;
-  border-top-color: rgb(51 51 51 / var(--tw-border-opacity));
   padding: 0px;
+  padding-left: 1rem;
+  text-align: left;
   line-height: 40px;
+}
+
+.vnavbar .link:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.vnavbar .button {
+  border-style: none;
 }
 
 .visible {
@@ -814,11 +824,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .m-0 {
   margin: 0px;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mt-\[140px\] {
@@ -1045,12 +1050,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-\[30px\] {
   width: 30px;
 }
 
-.w-full {
-  width: 100%;
+.w-64 {
+  width: 16rem;
 }
 
 .w-\[115px\] {
@@ -1153,12 +1162,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 3rem;
 }
 
-.min-w-\[100px\] {
-  min-width: 100px;
+.w-\[370px\] {
+  width: 370px;
 }
 
-.min-w-\[120px\] {
-  min-width: 120px;
+.min-w-\[100px\] {
+  min-width: 100px;
 }
 
 .min-w-\[200px\] {
@@ -1324,6 +1333,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-\[20px\] {
   gap: 20px;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-y-3 {
@@ -1539,6 +1552,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-\[130px\] {
@@ -1841,6 +1859,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     visibility: hidden;
 } */
 
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 .verticalnavbar {
   position: fixed;
   inset: 0;
@@ -1915,7 +1938,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dropdown__item {
   display: block;
   cursor: pointer;
-  padding: 4px 0;
+  padding: 4px 16px;
   transition: all linear 0.4s;
   min-width: 120px;
   color: #333;
@@ -1936,8 +1959,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 ::-webkit-scrollbar {
   -webkit-appearance: none;
           appearance: none;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -2098,12 +2121,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 2.5rem;
   }
 
+  .ipad\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
   .ipad\:block {
     display: block;
   }
 
   .ipad\:hidden {
     display: none;
+  }
+
+  .ipad\:w-4\/5 {
+    width: 80%;
   }
 
   .ipad\:w-full {
@@ -2114,8 +2145,25 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 100%;
   }
 
+  .ipad\:flex-col {
+    flex-direction: column;
+  }
+
+  .ipad\:gap-14 {
+    gap: 3.5rem;
+  }
+
   .ipad\:p-10 {
     padding: 2.5rem;
+  }
+
+  .ipad\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .ipad\:pt-16 {
+    padding-top: 4rem;
   }
 
   .ipad\:shadow-4xl {
@@ -2140,10 +2188,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 3rem;
   }
 
-  .miniipad\:mb-14 {
-    margin-bottom: 3.5rem;
-  }
-
   .miniipad\:hidden {
     display: none;
   }
@@ -2160,8 +2204,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     min-height: 250px;
   }
 
-  .miniipad\:w-4\/5 {
-    width: 80%;
+  .miniipad\:min-h-\[380px\] {
+    min-height: 380px;
   }
 
   .miniipad\:w-72 {
@@ -2192,6 +2236,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 7rem;
   }
 
+  .miniipad\:w-\[300px\] {
+    width: 300px;
+  }
+
   .miniipad\:max-w-full {
     max-width: 100%;
   }
@@ -2216,10 +2264,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: space-around;
   }
 
-  .miniipad\:gap-14 {
-    gap: 3.5rem;
-  }
-
   .miniipad\:gap-9 {
     gap: 2.25rem;
   }
@@ -2232,11 +2276,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 0.75rem;
   }
 
-  .miniipad\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
   .miniipad\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -2244,10 +2283,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .miniipad\:pt-2 {
     padding-top: 0.5rem;
-  }
-
-  .miniipad\:pt-16 {
-    padding-top: 4rem;
   }
 
   .miniipad\:pb-24 {
@@ -2284,6 +2319,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+  .tablet\:min-h-\[400px\] {
+    min-height: 400px;
+  }
+
   .tablet\:w-60 {
     width: 15rem;
   }
@@ -2292,8 +2331,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 7rem;
   }
 
+  .tablet\:w-\[370px\] {
+    width: 370px;
+  }
+
+  .tablet\:w-full {
+    width: 100%;
+  }
+
   .tablet\:min-w-\[420px\] {
     min-width: 420px;
+  }
+
+  .tablet\:max-w-full {
+    max-width: 100%;
   }
 
   .tablet\:flex-col {
