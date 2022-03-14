@@ -61,7 +61,7 @@ body {
     transform: rotate(90deg);
 }
 
-.dropdown__icon:hover .dropdown__items {
+.dropdown:hover .dropdown__items {
     display: block;
 }
 
@@ -73,6 +73,10 @@ body {
     padding: 0;
     border-radius: 8px 0 8px 8px;
     min-width: 135px;
+}
+
+.vnavbar .dropdown__items {
+    right: -16px;
 }
 
 .dropdown__item {
